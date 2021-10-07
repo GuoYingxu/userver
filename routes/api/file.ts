@@ -66,7 +66,7 @@ export function FileRouter(){
 
   router.route('/checkbyid').get(async(req,res,next) =>{
     const filerep = getCustomRepository(CFileRepository)
-    let list = await filerep.getFileListAfterId(id)
+    let list = await filerep.getFileListAfterId(req.query.id)
     return res.json({code:200,data:{list},message:'success'})
   })
   return router;
