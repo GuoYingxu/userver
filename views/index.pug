@@ -6,7 +6,7 @@ html
     button(onclick='send()') 打开0101
 
   script. 
-    var socket=io('http://47.104.222.17:3100/test')
+    var socket=io('http://47.104.222.17:3100/cq')
     socket.on('fileupload',(data) => {
       console.log(data)
       alert(data)

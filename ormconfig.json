@@ -4,7 +4,7 @@
   "port": 3306,
   "username": "root", 
   "password": "gyx_123!",
-  "database": "db_pic",
+  "database": "cq",
   "synchronize":true,
   "logging": true,
   "entities": [

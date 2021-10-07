@@ -5,8 +5,8 @@ let ws
 let iospace
 export function createWs(server){
    ws = SocketIO(server)
-   iospace = ws.of('/test')
-  ws.of('/test').on('connection',(socket) => {
+   iospace = ws.of('/cq')
+  ws.of('/cq').on('connection',(socket) => {
     console.log('---- connected')
     clientList.push(socket)
     socket.on('disconnect',() =>{

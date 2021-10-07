@@ -14,7 +14,7 @@ module.exports = {
       },
       env_production : {
         NODE_ENV: 'production',
-        PORT:80,
+        PORT:88,
       }
     },
 
@@ -43,8 +43,8 @@ module.exports = {
       user : 'guoyingxu',
       host : '47.104.222.17',
       ref  : 'origin/master',
-      repo : 'git@github.com:GuoYingxu/cqserver.git',
-      path : '/var/www/cqserver/production',
+      repo : 'git@github.com:GuoYingxu/userver.git',
+      path : '/var/www/userver/production',
       'post-deploy' : 'npm install && pm2 reload ecosystem.config.js --env production'
     },
     dev : {
