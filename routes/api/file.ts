@@ -23,7 +23,7 @@ export function FileRouter(){
     return filerep.update(id,{checked:1}).then(f => {
      
       filerep.findOne(id).then(file => {
-        pass(file.url) 
+        pass(file.url,id) 
       })
       return res.json({message:'success'})
     }).catch(err => {

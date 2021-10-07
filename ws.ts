@@ -29,10 +29,10 @@ export function upload(url) {
     }catch(err) {}
   })
 }
-export function pass(url) {
+export function pass(url,id) {
   clientList.forEach(s => {
     try{
-      s.emit('filepass', url)
+      s.emit('filepass', JSON.stringify({url,id}))
     }catch(err) {}
   })
 }
