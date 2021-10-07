@@ -7,7 +7,7 @@ module.exports = {
     // First application
     {
       interpreter: './node_modules/.bin/ts-node', 
-      name      : 'xhlyzt.cn',
+      name      : 'cq.cn',
       script    : 'server.ts',
       env: {
         COMMON_VARIABLE: 'true'
