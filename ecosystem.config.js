@@ -42,7 +42,7 @@ module.exports = {
     production : {
       user : 'guoyingxu',
       host : '47.104.222.17',
-      ref  : 'origin/master',
+      ref  : 'origin/main',
       repo : 'git@github.com:GuoYingxu/userver.git',
       path : '/var/www/userver/production',
       'post-deploy' : 'npm install && pm2 reload ecosystem.config.js --env production'
@@ -50,7 +50,7 @@ module.exports = {
     dev : {
       user : 'node',
       host : '212.83.163.1',
-      ref  : 'origin/master',
+      ref  : 'origin/main',
       repo : 'git@github.com:repo.git',
       path : '/var/www/development',
       'post-deploy' : 'npm install && pm2 reload ecosystem.config.js --env dev',
