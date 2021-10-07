@@ -35,4 +35,9 @@ export class CFileRepository extends Repository<Cfile> {
     } 
     return query.getCount()
   }
+  getFileListAfterId(id) {
+    let query =this.createQueryBuilder('cfile')
+    query = query.where('cfile.id > :id and cfile.checked=:ownerType', {id:id,ownerType: 1})
+    return query.getMany()
+  }
 }

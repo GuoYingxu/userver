@@ -63,5 +63,11 @@ export function FileRouter(){
       let total = await filerep.getFileListCount({...req.query})
       return res.json({code:200,data:{list,total},message:'success'})
     })
+
+  router.route('/checkbyid').get(async(req,res,next) =>{
+    const filerep = getCustomRepository(CFileRepository)
+    let list = await filerep.getFileListAfterId(id)
+    return res.json({code:200,data:{list},message:'success'})
+  })
   return router;
 }
