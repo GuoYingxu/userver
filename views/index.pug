@@ -1,0 +1,20 @@
+html
+  head
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.dev.js")
+  body
+    p wellcome
+    button(onclick='send()') 打开0101
+
+  script. 
+    var socket=io('http://47.104.222.17:3100/test')
+    socket.on('fileupload',(data) => {
+      console.log(data)
+      alert(data)
+    })
+    function send(){
+      console.log('send')
+      socket.send('message','send a message')
+    }
+
+    
+    

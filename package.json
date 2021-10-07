@@ -1,0 +1,46 @@
+{
+  "name": "tracer",
+  "version": "1.0.0",
+  "description": "Trace errors and  messages from remote webclient.",
+  "main": "server.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": " ts-node server.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@codehub.devcloud.huaweicloud.com:UTECSpt_guoyingxu00001/tracer.git"
+  },
+  "keywords": [
+    "Tracer",
+    "qst"
+  ],
+  "author": "guoyingxu",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "connect-history-api-fallback": "^1.6.0",
+    "cookie-parser": "^1.4.4",
+    "cookie-session": "^1.4.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.0",
+    "lodash": "^4.17.15",
+    "method-override": "^3.0.0",
+    "morgan": "^1.9.1",
+    "mysql": "^2.18.1",
+    "pug": "^2.0.4",
+    "qiniu": "^7.3.1",
+    "reflect-metadata": "^0.1.13",
+    "serve-favicon": "^2.5.0",
+    "serve-index": "^1.9.1",
+    "serve-static": "^1.14.1",
+    "socket.io": "^2.3.0",
+    "typeorm": "^0.2.24"
+  },
+  "devDependencies": {
+    "@types/node": "^13.9.1",
+    "eslint": "^6.8.0",
+    "ts-node": "^8.6.2",
+    "typescript": "^3.8.3"
+  }
+}
